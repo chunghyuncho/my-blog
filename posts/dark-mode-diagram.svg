@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img" aria-label="라이트 모드와 다크 모드 색상 토큰 비교 다이어그램">
+  <rect x="0" y="0" width="300" height="240" fill="#ffffff" />
+  <rect x="300" y="0" width="300" height="240" fill="#0d1117" />
+  <text x="150" y="40" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#1f2328">Light</text>
+  <text x="450" y="40" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#e6edf3">Dark</text>
+  <circle cx="150" cy="120" r="40" fill="#0969da" />
+  <circle cx="450" cy="120" r="40" fill="#4da3ff" />
+  <text x="150" y="190" text-anchor="middle" font-family="monospace" font-size="14" fill="#59636e">--color-accent</text>
+  <text x="450" y="190" text-anchor="middle" font-family="monospace" font-size="14" fill="#9aa4af">--color-accent</text>
+</svg>
