@@ -13,24 +13,30 @@
       } catch (e) {}
     })();
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container container--wide site-header-inner">
       <a class="site-title" href="index.html">my-blog</a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="다크 모드 전환" aria-pressed="false"></button>
     </div>
   </header>
 
-  <main class="container">
+  <main class="container container--wide">
     <ul id="post-list" class="post-list">
       <li class="empty-state">불러오는 중...</li>
     </ul>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container container--wide">
       <p>&copy; 2026 my-blog</p>
     </div>
   </footer>

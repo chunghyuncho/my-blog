@@ -53,8 +53,10 @@ async function init() {
     container.innerHTML = `
       <header class="post-header">
         <h1>${data.title ?? slug}</h1>
-        <p class="post-meta">${formatDate(data.date)}</p>
-        ${renderTags(data.tags)}
+        <div class="post-header-meta">
+          <p class="post-meta">${formatDate(data.date)}</p>
+          ${renderTags(data.tags)}
+        </div>
       </header>
       <div id="post-content" class="post-content"></div>
       <p class="post-footer"><a href="index.html">← 목록으로 돌아가기</a></p>
