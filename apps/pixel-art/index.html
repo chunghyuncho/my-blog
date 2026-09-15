@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>픽셀 아트 에디터</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>픽셀 아트 에디터</h1>
+      <p class="subtitle">16x16 격자에 클릭하거나 드래그해서 나만의 픽셀 아트를 그려보세요.</p>
+    </header>
+
+    <main class="app-main">
+      <section class="canvas-section" aria-label="그리기 캔버스">
+        <canvas id="pixel-canvas" tabindex="0" aria-label="16x16 픽셀 아트 격자. 방향키로 이동, 스페이스 또는 엔터로 칠하기"></canvas>
+      </section>
+
+      <section class="toolbar" aria-label="도구">
+        <div class="current-color-wrap">
+          <span id="current-color-preview" class="current-color-preview" aria-hidden="true"></span>
+          <span class="current-color-label">현재 색상</span>
+        </div>
+        <button type="button" id="eraser-btn" class="tool-btn" aria-pressed="false" aria-label="지우개 도구 선택">
+          🧹 지우개
+        </button>
+      </section>
+
+      <section class="palette-section" aria-label="색상 팔레트">
+        <div id="palette" class="palette" role="group" aria-label="기본 색상 스와치"></div>
+        <div class="custom-color-wrap">
+          <label for="custom-color" class="custom-color-label">커스텀 색상</label>
+          <input type="color" id="custom-color" value="#000000" aria-label="사용자 지정 색상 선택">
+        </div>
+      </section>
+
+      <section class="actions" aria-label="동작 버튼">
+        <button type="button" id="clear-btn" class="action-btn">전체 지우기</button>
+        <button type="button" id="save-btn" class="action-btn action-btn-primary">PNG로 저장</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
